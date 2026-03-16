@@ -71,7 +71,7 @@
                     <div class="dot-shape-top position-absolute">
                         <img src="assets/img/color-shape.svg" alt="dot" class="img-fluid">
                     </div>
-                    <img class="fancy-radius img-fluid" src="assets/img/about-us-2.jpg" alt="modern desk">
+                    <img class="fancy-radius img-fluid" src="assets/img/img2.png" alt="modern desk">
                     <div class="dot-shape position-absolute bottom-0">
                         <img src="assets/img/dot-shape.png" alt="dot">
                     </div>
