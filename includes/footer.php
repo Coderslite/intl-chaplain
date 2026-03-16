@@ -46,7 +46,7 @@
                     <h5 class="mb-4">Contact</h5>
                     <ul class="links-vertical">
                         <li><a target="_blank" href="#">Tel: +1813.699.9138</a></li>
-                        <li><a target="_blank" href="#">Email: cmintlcorp@gmail.com</a></li>
+                        <li><a target="_blank" href="mailto:cmintlcorp@gmail.com">Email: cmintlcorp@gmail.com</a></li>
                         <li><a target="_blank" href="#">Address: PO Box 283 Midway GA 31320</a></li>
                     </ul>
                 </div>
