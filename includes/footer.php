@@ -9,7 +9,7 @@
                     <a class="footer-brand mr-lg-5 d-flex" href="index.html">
                         <img src="assets/img/client-logos/logo.png" class="mr-3" alt="Footer logo">
                     </a>
-                    <p class="my-4">Interactively unleash interactive best practices before technically sound portals.
+                    <p class="my-4">Serving Communities Through Compassion, Faith, and Care.
                     </p>
                     <div class="btn-wrapper mt-4">
                         <button class="btn btn-icon-only btn-pill btn-twitter mr-2 icon icon-xs icon-shape"
