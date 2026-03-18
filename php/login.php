@@ -1,15 +1,22 @@
 <?php
-ini_set('session.use_strict_mode', 1);
+ini_set('session.use_strict_mode', '1');
+
+// VERY IMPORTANT: call this BEFORE session_start()
 session_set_cookie_params([
-    'lifetime' => 0,           // until browser closes
+    'lifetime' => 0,                     // session cookie (browser close)
     'path' => '/',
-    'domain' => '.intlchaplains.com', // notice the leading dot
-    'secure' => true,           // must be HTTPS
-    'httponly' => true,         // can't be accessed by JS
-    'samesite' => 'None'        // allows cross-subdomain
+    'domain' => '.intlchaplains.com',  // ← leading dot is correct
+    'secure' => true,                  // must be HTTPS
+    'httponly' => true,
+    'samesite' => 'None'                 // for cross-subdomain in iframes / cross-origin POST etc.
 ]);
 
 session_start();
+
+// Optional but strongly recommended in 2025+
+header("Referrer-Policy: strict-origin-when-cross-origin");
+header("Cross-Origin-Resource-Policy: same-site"); // or "same-origin" if possible
+
 include "db_config.php";
 
 $email = $_POST['email'];
