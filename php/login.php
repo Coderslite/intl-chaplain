@@ -1,6 +1,14 @@
 <?php
-include "db_config.php";
+session_set_cookie_params([
+    'lifetime' => 0,
+    'path' => '/',
+    'domain' => '.intlchaplains.com', // 🔥 THIS IS THE FIX
+    'secure' => true, // only if using HTTPS
+    'httponly' => true,
+    'samesite' => 'Lax'
+]);
 session_start();
+include "db_config.php";
 
 $email = $_POST['email'];
 $password = $_POST['password'];
