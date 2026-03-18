@@ -77,8 +77,8 @@ include "php/session.php";
                                         <div class="input-icon">
                                             <i class="ti-email"></i>
                                         </div>
-                                        <input type="email" class="form-control" placeholder="name@yourdomain.com"
-                                            required>
+                                        <input type="email" name="email" class="form-control"
+                                            placeholder="name@yourdomain.com" required>
                                     </div>
                                 </div>
                                 <!-- Password -->
@@ -88,16 +88,15 @@ include "php/session.php";
                                             <label class="font-weight-bold">Password</label>
                                         </div>
                                         <div class="col-auto">
-                                            <a href="password-reset.html" class="form-text small text-muted">
-                                                Forgot password?
-                                            </a>
+
                                         </div>
                                     </div>
                                     <div class="input-group input-group-merge">
                                         <div class="input-icon">
                                             <i class="ti-lock"></i>
                                         </div>
-                                        <input type="password" class="form-control" placeholder="Enter your password">
+                                        <input type="password" name="password" class="form-control"
+                                            placeholder="Enter your password">
                                     </div>
                                 </div>
 
