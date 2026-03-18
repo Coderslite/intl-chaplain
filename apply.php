@@ -39,14 +39,14 @@ include "includes/header.php";
             <div class="col-md-10 col-lg-9">
                 <div class="card shadow-lg rounded-custom p-5 bg-white">
 
-                <?php
+                    <?php
                     echo SuccessMessage();
                     echo ErrorMessage();
 
                     ?>
-                    
 
-                    <form action="php/apply.php" method="POST" enctype="multipart/form-data" novalidate>
+
+                    <form action="php/apply.php" method="POST" enctype="multipart/form-data">
 
                         <!-- Personal Information -->
                         <div class="mb-4">
