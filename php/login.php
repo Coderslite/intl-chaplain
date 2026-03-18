@@ -1,12 +1,16 @@
 <?php
+ini_set('session.cookie_secure', '1'); // if HTTPS
+ini_set('session.cookie_httponly', '1');
+ini_set('session.cookie_samesite', 'None'); // Important for cross-subdomain
 session_set_cookie_params([
     'lifetime' => 0,
     'path' => '/',
-    'domain' => '.intlchaplains.com', // 🔥 THIS IS THE FIX
-    'secure' => true, // only if using HTTPS
+    'domain' => '.intlchaplains.com', // notice the dot
+    'secure' => true,
     'httponly' => true,
-    'samesite' => 'Lax'
+    'samesite' => 'None' // must be None for cross-site/subdomain
 ]);
+
 session_start();
 include "db_config.php";
 
