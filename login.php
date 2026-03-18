@@ -70,7 +70,8 @@ include "php/session.php";
                             ?>
 
                             <!-- Form -->
-                            <form class="login-signup-form" action="php/login.php" method="POST">
+                            <form class="login-signup-form" action="https://chap.intlchaplains.com/php/login.php"
+                                method="POST">
                                 <div class="form-group">
                                     <label class="font-weight-bold">Email Address</label>
                                     <div class="input-group input-group-merge">
