@@ -61,7 +61,7 @@ include "php/session.php";
                         <!-- Image -->
                         <div class="d-flex align-items-center min-vh-100 bg-gradient-primary text-white">
                             <div class="position-relative w-75 p-8">
-                                <h1 class="display-2">Welcome Back !</h1>
+                                <h1 class="display-2">Welcome Back</h1>
                                 <p class="lead">Sign in to continue to your account</p>
                             </div>
                         </div>
