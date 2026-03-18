@@ -3,7 +3,7 @@
 
 <!--hero section start-->
 <section id="home" class="section pt-9 pb-9 section-header text-white gradient-overly-right-color"
-    style="background: url('assets/img/img1.jpeg') no-repeat center bottom / cover">
+    style="background: url('assets/img/img1.jpeg') no-repeat center top / cover">
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-lg-6">
