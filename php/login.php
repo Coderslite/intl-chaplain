@@ -1,14 +1,12 @@
 <?php
-ini_set('session.cookie_secure', '1'); // if HTTPS
-ini_set('session.cookie_httponly', '1');
-ini_set('session.cookie_samesite', 'None'); // Important for cross-subdomain
+ini_set('session.use_strict_mode', 1);
 session_set_cookie_params([
-    'lifetime' => 0,
+    'lifetime' => 0,           // until browser closes
     'path' => '/',
-    'domain' => '.intlchaplains.com', // notice the dot
-    'secure' => true,
-    'httponly' => true,
-    'samesite' => 'None' // must be None for cross-site/subdomain
+    'domain' => '.intlchaplains.com', // notice the leading dot
+    'secure' => true,           // must be HTTPS
+    'httponly' => true,         // can't be accessed by JS
+    'samesite' => 'None'        // allows cross-subdomain
 ]);
 
 session_start();
