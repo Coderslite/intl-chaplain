@@ -14,20 +14,20 @@ if ($num == 1) {
     $userId = $user['id'];
 
     if ($role == 'lead-team') {
-        header('location: https://chap.intlchaplains.com/admin');
         $_SESSION['admin-email'] = $email;
         $_SESSION['admin-id'] = $userId;
+        header('location: https://chap.intlchaplains.com/admin');
 
 
     } elseif ($role == 'case-manager') {
-        header('location: https://chap.intlchaplains.com/case-manager');
         $_SESSION['case-manager-email'] = $email;
         $_SESSION['case-manager-id'] = $userId;
+        header('location: https://chap.intlchaplains.com/case-manager');
 
     } elseif ($role == 'accountant') {
-        header('location: https://chap.intlchaplains.com/accountant');
         $_SESSION['accountant-email'] = $email;
         $_SESSION['accountant-id'] = $userId;
+        header('location: https://chap.intlchaplains.com/accountant');
 
     } else {
         $_SESSION['ErrorMessage'] = "Invalid Role Assigned to this user: $role";
