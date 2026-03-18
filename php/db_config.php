@@ -1,10 +1,10 @@
 <?php
-// $isLive = true;
-$isLive = false;
+$isLive = true;
+// $isLive = false;
 $host = 'localhost';
-$dbname =$isLive?'leatviuo_cmon': 'cmom';
-$username =$isLive?'leatviuo_cmon': 'root';
-$password = $isLive? 'Mesomorph_1$': 'root';
+$dbname = $isLive ? 'intlkiho_chap' : 'cmom';
+$username = $isLive ? 'intlkiho_user' : 'root';
+$password = $isLive ? 'Mesomorph_1$' : 'root';
 
 // Create connection
 $conn = mysqli_connect($host, $username, $password, $dbname);
