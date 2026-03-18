@@ -14,7 +14,7 @@ include "php/session.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--favicon icon-->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="assets/img/client-logos/logo.png" type="image/png" sizes="16x16">
 
     <!--title-->
     <title>Login - Corporate and Business HTML Template</title>
