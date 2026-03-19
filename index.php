@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-7 col-lg-6">
                 <div class="hero-slider-content">
-                    <span class="text-uppercase">We are dedicated</span>
+                    <!-- <span class="text-uppercase">We are dedicated</span> -->
                     <h1 class="display-2">Chaplain Ministries International Corp</h1>
                     <p class="lead">Serving Communities Through Compassion, Faith, and Care
                         Chaplain Ministries International Corp equips and ordains chaplains who provide spiritual care,
