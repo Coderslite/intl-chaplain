@@ -30,7 +30,7 @@ include "php/session.php";
     <link rel="icon" href="assets/img/client-logos/logo.png" type="image/png" sizes="16x16">
 
     <!--title-->
-    <title>Login - Corporate and Business HTML Template</title>
+    <title>Login - Intl Chaplain</title>
 
     <!--build:css-->
     <link rel="stylesheet" href="assets/css/main.css">
