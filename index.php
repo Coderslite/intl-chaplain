@@ -46,8 +46,8 @@
                     <div class="promo-block-content">
                         <h5>Chaplain Ordination</h5>
                         <p class="mb-0">
-                            Qualified individuals receive ordination and credentials to serve effectively in chaplaincy
-                            ministry and community outreach programs.
+                            Qualified individuals receive ordination and credentials to serve in chaplaincy ministry and
+                            community outreach.
                         </p>
                     </div>
                 </div>
