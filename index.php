@@ -453,3 +453,12 @@
 <!--cta section end-->
 
 <?php include "includes/footer.php"; ?>
+
+<style>
+    .single-promo-block {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+</style>
