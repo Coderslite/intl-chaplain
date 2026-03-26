@@ -33,8 +33,10 @@
                     <div class="icon icon-lg text-primary"><i class="fab fa-confluence"></i></div>
                     <div class="promo-block-content">
                         <h5>Chaplain Training</h5>
-                        <p class="mb-0">We provide training in chaplaincy, crisis intervention, ethics, trauma‑informed
-                            care, and spiritual counseling.</p>
+                        <p class="mb-0">
+                            We provide training in chaplaincy, crisis response, ethics, trauma care, and spiritual
+                            counseling for effective ministry service.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -43,8 +45,10 @@
                     <div class="icon icon-lg text-primary"><i class="fas fa-bug"></i></div>
                     <div class="promo-block-content">
                         <h5>Chaplain Ordination</h5>
-                        <p class="mb-0">Qualified individuals receive chaplain ordination and credentials to serve in
-                            ministry and community outreach.</p>
+                        <p class="mb-0">
+                            Qualified individuals receive ordination and credentials to serve effectively in chaplaincy
+                            ministry and community outreach programs.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -53,8 +57,10 @@
                     <div class="icon icon-lg text-primary"><i class="fas fa-cloud-moon"></i></div>
                     <div class="promo-block-content">
                         <h5>Community Outreach</h5>
-                        <p class="mb-0">Our chaplains provide prayer, counseling, and spiritual care in
-                            hospitals, shelters, and community programs.</p>
+                        <p class="mb-0">
+                            Our chaplains offer prayer, counseling, and spiritual care across hospitals, shelters, and
+                            community outreach programs.
+                        </p>
                     </div>
                 </div>
             </div>
