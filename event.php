@@ -12,9 +12,9 @@ include "includes/header.php";
             <div class="col-md-7 col-lg-6">
                 <div class="hero-slider-content">
                     <span class="text-uppercase">Register Now</span>
-                    <h1 class="display-2">Women Conference 2026</h1>
+                    <h1 class="display-2">Women's Conference 2026</h1>
                     <p class="lead">
-                        Join us for an inspiring and empowering Women Conference designed to uplift, equip, and connect
+                        Join us for an inspiring and empowering Women's Conference designed to uplift, equip, and connect
                         women from all walks of life.
                         Secure your spot by completing the registration form below.
                     </p>
@@ -31,9 +31,9 @@ include "includes/header.php";
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
                 <div class="section-heading text-center mb-5">
-                    <h2>Women Conference Registration Form</h2>
+                    <h2>Women's Conference Registration Form</h2>
                     <p class="lead">
-                        Kindly fill out the form below to register for the Women Conference.
+                        Kindly fill out the form below to register for the Women's Conference.
                         Our team will confirm your registration and send event details to your email within 1–3 business
                         days.
                     </p>
@@ -102,7 +102,7 @@ include "includes/header.php";
                                 <label class="custom-control-label" for="terms">
                                     I agree to the <a href="#" class="text-primary">Terms and Conditions</a> and confirm
                                     that all information provided is correct.
-                                    I also consent to receive updates about the Women Conference.
+                                    I also consent to receive updates about the Women's Conference.
                                     <span class="text-danger">*</span>
                                 </label>
                             </div>
@@ -121,7 +121,7 @@ include "includes/header.php";
                             </button>
                             <p class="text-muted small mt-3">
                                 By registering, you will receive updates, reminders, and important information about the
-                                Women Conference.
+                                Women's Conference.
                             </p>
                         </div>
 
@@ -418,7 +418,7 @@ include "includes/header.php";
                 <div class="subscribe-content">
                     <h3>Need More Information?</h3>
                     <p class="mb-lg-0 mb-md-0">
-                        Have questions about the Women Conference schedule, speakers, or venue?
+                        Have questions about the Women's Conference schedule, speakers, or venue?
                         Our team is here to assist you.
                     </p>
                 </div>

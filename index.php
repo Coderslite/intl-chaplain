@@ -16,7 +16,7 @@
                         in hospitals, shelters, correctional facilities, disaster response teams, and community
                         programs.. </p>
                     <a href="apply.php" class="btn btn-secondary mt-4">Become a Chaplain</a>
-                    <a href="event.php" class="btn btn-secondary mt-4">Women Conference</a>
+                    <a href="event.php" class="btn btn-secondary mt-4">Women's Conference</a>
                 </div>
             </div>
         </div>

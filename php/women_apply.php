@@ -38,7 +38,7 @@ function sendWomenConferenceEmail($first_name, $last_name, $email)
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Women Conference Registration Confirmed</title>
+    <title>Women\'s Conference Registration Confirmed</title>
 </head>
 <body style="margin:0;padding:0;background-color:#fdf4ff;font-family:\'Segoe UI\',Arial,sans-serif;">
 
@@ -72,7 +72,7 @@ function sendWomenConferenceEmail($first_name, $last_name, $email)
                             </table>
 
                             <h1 style="margin:0 0 6px;color:#ffffff;font-size:24px;font-weight:700;letter-spacing:0.5px;">
-                                Women Conference 2026
+                                Women\'s Conference 2026
                             </h1>
                             <p style="margin:0;color:rgba(255,255,255,0.80);font-size:13px;
                                       letter-spacing:1.5px;text-transform:uppercase;">
@@ -87,7 +87,7 @@ function sendWomenConferenceEmail($first_name, $last_name, $email)
                             style="background-color:#fce4ec;padding:18px 40px;
                                    border-bottom:3px solid #e91e63;">
                             <p style="margin:0;color:#880e4f;font-size:15px;font-weight:600;">
-                                🎉 &nbsp;You are successfully registered for the Women Conference!
+                                🎉 &nbsp;You are successfully registered for the Women\'s Conference!
                             </p>
                         </td>
                     </tr>
@@ -101,7 +101,7 @@ function sendWomenConferenceEmail($first_name, $last_name, $email)
                             </p>
 
                             <p style="margin:0 0 20px;color:#555;font-size:15px;line-height:1.7;">
-                                Thank you for registering for the <strong>Women Conference 2026</strong>!
+                                Thank you for registering for the <strong>Women\'s Conference 2026</strong>!
                                 We are so excited to have you join us for this inspiring and empowering event.
                             </p>
 
@@ -216,7 +216,7 @@ function sendWomenConferenceEmail($first_name, $last_name, $email)
 
     // ── PLAIN TEXT FALLBACK ──────────────────────────────────────────────
     $plainBody = "Dear $full_name,\n\n"
-        . "Thank you for registering for the Women Conference 2026!\n\n"
+        . "Thank you for registering for the Women's Conference 2026!\n\n"
         . "We are excited to have you join us. Our team will send you full event details "
         . "— including the schedule, venue, and speakers — within 1–3 business days.\n\n"
         . "WHAT HAPPENS NEXT:\n"
@@ -241,7 +241,7 @@ function sendWomenConferenceEmail($first_name, $last_name, $email)
 
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
-        $mail->Subject = '🎉 You\'re Registered — Women Conference 2026';
+        $mail->Subject = '🎉 You\'re Registered — Women\'s Conference 2026';
         $mail->Body = $htmlBody;
         $mail->AltBody = $plainBody;
         $mail->SMTPDebug = 2;
@@ -251,7 +251,7 @@ function sendWomenConferenceEmail($first_name, $last_name, $email)
         return [true, "Confirmation email sent."];
 
     } catch (Exception $e) {
-        error_log("Women conference email failed: " . $mail->ErrorInfo);
+        error_log("Women's Conference email failed: " . $mail->ErrorInfo);
         return [false, "Email could not be sent: " . $mail->ErrorInfo];
     }
 }
