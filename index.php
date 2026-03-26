@@ -3,7 +3,7 @@
 
 <!--hero section start-->
 <section id="home" class="section pt-9 pb-9 section-header text-white gradient-overly-right-color"
-    style="background: url('assets/img/img1.jpeg') no-repeat center top / cover">
+    style="background: url('assets/img/img4.jpeg') no-repeat center top / cover">
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-lg-6">
@@ -16,6 +16,7 @@
                         in hospitals, shelters, correctional facilities, disaster response teams, and community
                         programs.. </p>
                     <a href="apply.php" class="btn btn-secondary mt-4">Become a Chaplain</a>
+                    <a href="event.php" class="btn btn-secondary mt-4">Women Conference</a>
                 </div>
             </div>
         </div>
@@ -69,7 +70,7 @@
             <div class="col-md-12 col-lg-6 mb-4 mb-md-4 mb-lg-0">
                 <div class="card bg-primary position-relative  shadow-lg fancy-radius p-3">
                     <div class="dot-shape-top position-absolute">
-                        <img src="assets/img/color-shape.svg" alt="dot" class="img-fluid">
+                        <img src="assets/img/color-shape.png" alt="dot" class="img-fluid" style="width:50%">
                     </div>
                     <img class="fancy-radius img-fluid" src="assets/img/img2.png" alt="modern desk">
                     <div class="dot-shape position-absolute bottom-0">

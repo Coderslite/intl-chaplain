@@ -42,11 +42,9 @@ include "includes/header.php";
                     <?php
                     echo SuccessMessage();
                     echo ErrorMessage();
-
                     ?>
 
-
-                    <form action="php/apply.php" method="POST" enctype="multipart/form-data">
+                    <form action="php/apply.php" method="POST" enctype="multipart/form-data" id="chaplainForm">
 
                         <!-- Personal Information -->
                         <div class="mb-4">
@@ -250,7 +248,7 @@ include "includes/header.php";
                                     <small class="form-text text-muted">PDF, DOC, DOCX — Max 5MB.</small>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="drivers_license" class="font-weight-bold">Upload Driver’s
+                                    <label for="drivers_license" class="font-weight-bold">Upload Driver's
                                         License</label>
                                     <input type="file" class="form-control-file" id="drivers_license"
                                         name="drivers_license" accept=".jpg,.jpeg,.png,.pdf">
@@ -265,20 +263,25 @@ include "includes/header.php";
                                         value="1" <?php echo (isset($_POST['terms']) && $_POST['terms'] == '1') ? 'checked' : ''; ?> required>
                                     <label class="custom-control-label" for="terms">
                                         I agree to the <a href="#" class="text-primary">Terms and Conditions</a> and
-                                        confirm
-                                        that all information provided is accurate. <span class="text-danger">*</span>
+                                        confirm that all information provided is accurate. <span
+                                            class="text-danger">*</span>
                                     </label>
                                 </div>
                             </div>
 
-                            <!-- Submit -->
+                            <!-- Submit Button -->
                             <div class="text-center mt-4">
-                                <button type="submit" class="btn btn-primary btn-lg px-5">
-                                    <i class="ti-check mr-2"></i> Submit Application
+                                <button type="submit" class="btn btn-primary btn-lg px-5" id="submitBtn">
+                                    <span id="btnDefault">
+                                        <i class="ti-check mr-2"></i> Submit Application
+                                    </span>
+                                    <span id="btnLoading" style="display:none;">
+                                        <span class="chaplain-spinner mr-2"></span>
+                                        Submitting, please wait...
+                                    </span>
                                 </button>
                                 <p class="text-muted small mt-3">By submitting, you agree to be contacted by our
-                                    ministry
-                                    team regarding your application.</p>
+                                    ministry team regarding your application.</p>
                             </div>
 
                     </form>
@@ -289,6 +292,305 @@ include "includes/header.php";
     </div>
 </section>
 <!--registration form section end-->
+
+<!-- FULL-SCREEN LOADING OVERLAY -->
+<div id="loadingOverlay">
+    <div class="loading-card">
+        <div class="cross-pulse">✝</div>
+        <div class="loading-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h5 class="loading-title">Submitting Your Application</h5>
+        <p class="loading-sub" id="loadingMessage">Saving your information...</p>
+        <div class="loading-steps">
+            <div class="step" id="step1">
+                <span class="step-icon">📋</span>
+                <span class="step-label">Saving your information</span>
+                <span class="step-status" id="status1">⏳</span>
+            </div>
+            <div class="step" id="step2">
+                <span class="step-icon">📎</span>
+                <span class="step-label">Processing documents</span>
+                <span class="step-status" id="status2">⏳</span>
+            </div>
+            <div class="step" id="step3">
+                <span class="step-icon">📧</span>
+                <span class="step-label">Sending confirmation email</span>
+                <span class="step-status" id="status3">⏳</span>
+            </div>
+        </div>
+        <p class="loading-note">Please do not close or refresh this page.</p>
+    </div>
+</div>
+
+<style>
+    /* ── SPINNER ON BUTTON ──────────────────────────────────────── */
+    .chaplain-spinner {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-top-color: #fff;
+        border-radius: 50%;
+        animation: spin 0.75s linear infinite;
+        vertical-align: middle;
+    }
+
+    /* ── FULL-SCREEN OVERLAY ────────────────────────────────────── */
+    #loadingOverlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        background: rgba(10, 25, 55, 0.82);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        align-items: center;
+        justify-content: center;
+    }
+
+    #loadingOverlay.active {
+        display: flex;
+    }
+
+    .loading-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 48px 40px 40px;
+        max-width: 420px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 32px 80px rgba(0, 0, 0, 0.35);
+        animation: cardIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    @keyframes cardIn {
+        from {
+            transform: translateY(30px) scale(0.95);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    /* Pulsing cross */
+    .cross-pulse {
+        font-size: 36px;
+        margin-bottom: 16px;
+        animation: crossPulse 1.6s ease-in-out infinite;
+        display: block;
+        color: #1a3c6e;
+    }
+
+    @keyframes crossPulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.18);
+            opacity: 0.7;
+        }
+    }
+
+    /* Ring spinner */
+    .loading-ring {
+        display: inline-block;
+        position: relative;
+        width: 56px;
+        height: 56px;
+        margin-bottom: 20px;
+    }
+
+    .loading-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        margin: 6px;
+        border: 4px solid transparent;
+        border-radius: 50%;
+        animation: spin 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    }
+
+    .loading-ring div:nth-child(1) {
+        border-top-color: #1a3c6e;
+        animation-delay: -0.3s;
+    }
+
+    .loading-ring div:nth-child(2) {
+        border-top-color: #2d6a9f;
+        animation-delay: -0.2s;
+    }
+
+    .loading-ring div:nth-child(3) {
+        border-top-color: #4caf50;
+        animation-delay: -0.1s;
+    }
+
+    .loading-ring div:nth-child(4) {
+        border-top-color: #1a3c6e;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .loading-title {
+        color: #1a3c6e;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+    }
+
+    .loading-sub {
+        color: #777;
+        font-size: 0.9rem;
+        margin-bottom: 24px;
+        min-height: 20px;
+        transition: opacity 0.3s;
+    }
+
+    /* Step indicators */
+    .loading-steps {
+        text-align: left;
+        background: #f4f7fb;
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin-bottom: 20px;
+    }
+
+    .step {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 0;
+        border-bottom: 1px solid #e8edf5;
+        font-size: 0.875rem;
+        color: #555;
+        transition: color 0.3s;
+    }
+
+    .step:last-child {
+        border-bottom: none;
+    }
+
+    .step.done {
+        color: #2e7d32;
+    }
+
+    .step.active {
+        color: #1a3c6e;
+        font-weight: 600;
+    }
+
+    .step-icon {
+        font-size: 16px;
+        flex-shrink: 0;
+    }
+
+    .step-label {
+        flex: 1;
+    }
+
+    .step-status {
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+    .loading-note {
+        color: #bbb;
+        font-size: 0.78rem;
+        margin: 0;
+    }
+
+    /* Disabled submit button */
+    #submitBtn:disabled {
+        opacity: 0.75;
+        cursor: not-allowed;
+    }
+</style>
+
+<script>
+    (function () {
+        const form = document.getElementById('chaplainForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnDefault = document.getElementById('btnDefault');
+        const btnLoading = document.getElementById('btnLoading');
+        const overlay = document.getElementById('loadingOverlay');
+
+        // Step elements
+        const steps = [
+            { el: document.getElementById('step1'), status: document.getElementById('status1') },
+            { el: document.getElementById('step2'), status: document.getElementById('status2') },
+            { el: document.getElementById('step3'), status: document.getElementById('status3') },
+        ];
+        const loadingMsg = document.getElementById('loadingMessage');
+
+        const messages = [
+            'Saving your information...',
+            'Processing your documents...',
+            'Sending confirmation email...',
+        ];
+
+        let submitted = false; // double-submit guard
+
+        function activateStep(index) {
+            steps.forEach((s, i) => {
+                s.el.classList.remove('active', 'done');
+                if (i < index) { s.el.classList.add('done'); s.status.textContent = '✅'; }
+                if (i === index) { s.el.classList.add('active'); s.status.textContent = '⏳'; }
+                if (i > index) { s.status.textContent = '⏳'; }
+            });
+            if (messages[index]) loadingMsg.textContent = messages[index];
+        }
+
+        form.addEventListener('submit', function (e) {
+            // Native HTML5 validation fires first — if invalid, don't intercept
+            if (!form.checkValidity()) return;
+
+            // Double-submit guard
+            if (submitted) {
+                e.preventDefault();
+                return;
+            }
+            submitted = true;
+
+            // Update button state
+            btnDefault.style.display = 'none';
+            btnLoading.style.display = 'inline-flex';
+            btnLoading.style.alignItems = 'center';
+            submitBtn.disabled = true;
+
+            // Show overlay
+            overlay.classList.add('active');
+
+            // Animate steps to simulate progress while the real POST happens
+            activateStep(0);
+
+            setTimeout(function () { activateStep(1); }, 1800);
+            setTimeout(function () { activateStep(2); }, 3600);
+
+            // Let the form submit naturally — page redirects on server response
+        });
+    })();
+</script>
 
 <!--cta section start-->
 <section class="section section-sm py-5">
