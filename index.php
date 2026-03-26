@@ -156,7 +156,7 @@
                     </div>
                     <div class="services-content-wrap">
                         <h3 class="h6">Community Outreach</h3>
-                        <p>Our chaplains provide prayer, counseling, and spiritual care in hospitals,
+                        <p>Our chaplains provide prayer, counseling, and spiritual care,
                             shelters, and community programs.</p>
                     </div>
                 </div>
@@ -453,12 +453,3 @@
 <!--cta section end-->
 
 <?php include "includes/footer.php"; ?>
-
-<style>
-    .single-promo-block {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-</style>
