@@ -150,7 +150,7 @@
                     </div>
                     <div class="services-content-wrap">
                         <h3 class="h6">Community Outreach</h3>
-                        <p>Our chaplains provide prayer, counseling, grief support, and spiritual care in hospitals,
+                        <p>Our chaplains provide prayer, counseling, and spiritual care in hospitals,
                             shelters, and community programs.</p>
                     </div>
                 </div>
