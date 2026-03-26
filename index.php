@@ -53,7 +53,7 @@
                     <div class="icon icon-lg text-primary"><i class="fas fa-cloud-moon"></i></div>
                     <div class="promo-block-content">
                         <h5>Community Outreach</h5>
-                        <p class="mb-0">Our chaplains provide prayer, counseling, grief support, and spiritual care in
+                        <p class="mb-0">Our chaplains provide prayer, counseling, and spiritual care in
                             hospitals, shelters, and community programs.</p>
                     </div>
                 </div>
