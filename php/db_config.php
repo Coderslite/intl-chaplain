@@ -1,6 +1,6 @@
 <?php
-// $isLive = true;
-$isLive = false;
+$isLive = true;
+// $isLive = false;
 $host = 'localhost';
 $dbname = $isLive ? 'intlkiho_chap' : 'cmom';
 $username = $isLive ? 'intlkiho_user' : 'root';
