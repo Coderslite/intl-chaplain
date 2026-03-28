@@ -302,7 +302,7 @@ function sendChaplainConfirmationEmail($first_name, $last_name, $email)
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
-        $mail->setFrom($smtpUsername, $fromName);
+        $mail->setFrom($smtpReplyEmail, $fromName);
         $mail->addReplyTo($smtpReplyEmail, $fromName);
         $mail->addAddress($email, $full_name);
 
