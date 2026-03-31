@@ -379,7 +379,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($_FILES['resume']['name'])) {
         list($success, $result) = uploadFile(
             $_FILES['resume'],
-            "/home/intlkihochap.intlchaplains.com/uploads/resume/",
+            "/home/intlkiho/chap.intlchaplains.com/uploads/resume/",
             ['pdf', 'doc', 'docx'],
             5 * 1024 * 1024
         );
@@ -396,7 +396,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($_FILES['drivers_license']['name'])) {
         list($success, $result) = uploadFile(
             $_FILES['drivers_license'],
-            "/home/intlkihochap.intlchaplains.com/uploads/license/",
+            "/home/intlkiho/chap.intlchaplains.com/uploads/license/",
             ['jpg', 'jpeg', 'png', 'pdf'],
             3 * 1024 * 1024
         );
