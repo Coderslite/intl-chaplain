@@ -379,10 +379,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($_FILES['resume']['name'])) {
         list($success, $result) = uploadFile(
             $_FILES['resume'],
-            "../uploads/resume/",
+            "/home/intlkihochap.intlchaplains.com/uploads/resume/",
             ['pdf', 'doc', 'docx'],
             5 * 1024 * 1024
         );
+
         if ($success) {
             $resume_name = $result;
         } else {
@@ -395,10 +396,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($_FILES['drivers_license']['name'])) {
         list($success, $result) = uploadFile(
             $_FILES['drivers_license'],
-            "../uploads/license/",
+            "/home/intlkihochap.intlchaplains.com/uploads/license/",
             ['jpg', 'jpeg', 'png', 'pdf'],
             3 * 1024 * 1024
         );
+
         if ($success) {
             $drivers_license_name = $result;
         } else {
