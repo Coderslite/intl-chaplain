@@ -64,10 +64,11 @@ function sendChaplainConfirmationEmail($first_name, $last_name, $email)
 
     // Attachments — all 4 files from the attachments/ folder
     $attachments = [
-        'attachments/Chaplain School _ Membership Application.pdf',
-        'attachments/Code of Ethics _ Standards of Conduct.pdf',
-        'attachments/Membership  Training Recognition Application Authorization Form.pdf',
-        'attachments/Vision.pdf',
+        'attachments/01_Objectives_and_mission.pdf',
+        'attachments/02_CFMI_Member_Code_of_Ethics.pdf',
+        'attachments/03_Senior_Citizen_MEMBERSHIP.pdf',
+        'attachments/04_REGISTERED_CHAPLAIN_MEMBERSHIP.pdf',
+        'attachments/05_Authorization.pdf',
     ];
 
     $full_name = htmlspecialchars($first_name . ' ' . $last_name);
