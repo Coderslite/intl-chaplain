@@ -181,7 +181,7 @@ function sendChaplainConfirmationEmail($first_name, $last_name, $email)
                                                 <td style="padding:10px 20px;border-bottom:1px solid #dce6f7;">
                                                     <span style="color:#e53935;font-size:16px;margin-right:10px;">📄</span>
                                                     <span style="color:#1a3c6e;font-size:14px;font-weight:500;">
-                                                        Chaplain School &amp; Membership Application
+                                                      Objectives and mission
                                                     </span>
                                                 </td>
                                             </tr>
@@ -189,7 +189,7 @@ function sendChaplainConfirmationEmail($first_name, $last_name, $email)
                                                 <td style="padding:10px 20px;border-bottom:1px solid #dce6f7;">
                                                     <span style="color:#e53935;font-size:16px;margin-right:10px;">📄</span>
                                                     <span style="color:#1a3c6e;font-size:14px;font-weight:500;">
-                                                        Code of Ethics &amp; Standards of Conduct
+                                                       CFMI Member Code of Ethics
                                                     </span>
                                                 </td>
                                             </tr>
@@ -197,7 +197,7 @@ function sendChaplainConfirmationEmail($first_name, $last_name, $email)
                                                 <td style="padding:10px 20px;border-bottom:1px solid #dce6f7;">
                                                     <span style="color:#e53935;font-size:16px;margin-right:10px;">📄</span>
                                                     <span style="color:#1a3c6e;font-size:14px;font-weight:500;">
-                                                        Membership Training Recognition &amp; Authorization Form
+                                                       Senior Citizen MEMBERSHIP
                                                     </span>
                                                 </td>
                                             </tr>
@@ -205,7 +205,15 @@ function sendChaplainConfirmationEmail($first_name, $last_name, $email)
                                                 <td style="padding:10px 20px;">
                                                     <span style="color:#e53935;font-size:16px;margin-right:10px;">📄</span>
                                                     <span style="color:#1a3c6e;font-size:14px;font-weight:500;">
-                                                        Vision
+                                                       REGISTERED CHAPLAIN MEMBERSHIP
+                                                    </span>
+                                                </td>
+                                            </tr>   
+                                            <tr>
+                                                <td style="padding:10px 20px;">
+                                                    <span style="color:#e53935;font-size:16px;margin-right:10px;">📄</span>
+                                                    <span style="color:#1a3c6e;font-size:14px;font-weight:500;">
+                                                       Authorization
                                                     </span>
                                                 </td>
                                             </tr>
