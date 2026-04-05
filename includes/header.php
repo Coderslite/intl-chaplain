@@ -3,14 +3,14 @@
 
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = 'cae3400763ab3df6a09d331df838dd314f6a57a9';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = 'cae3400763ab3df6a09d331df838dd314f6a57a9';
+    window.smartsupp || (function (d) {
+        var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+        s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+        c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+        c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+    })(document);
 </script>
 <noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
 
@@ -31,6 +31,23 @@ window.smartsupp||(function(d) {
     <!--build:css-->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- endbuild -->
+
+    <!-- SEO Optimization -->
+    <meta name="description"
+        content="Chaplain Ministries International Corporate - Professional chaplain training, ordination, and spiritual care across the USA. Become a certified chaplain serving hospitals, shelters, prisons, disaster response, and communities with faith and compassion.">
+    <meta name="keywords"
+        content="chaplain training USA, become a chaplain, chaplain ordination, spiritual care chaplain, crisis response chaplain, community outreach chaplain">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Chaplain Ministries International Corp">
+    <link rel="canonical" href="https://https://intlchaplains.com/">
+
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Chaplain Ministries International Corp | Become a Chaplain in the USA">
+    <meta property="og:description"
+        content="Equipping and ordaining chaplains who provide spiritual care, crisis support, and community outreach across the United States.">
+    <meta property="og:image" content="https://https://intlchaplains.com/assets/img/img4.jpeg">
+    <meta property="og:url" content="https://https://intlchaplains.com/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
