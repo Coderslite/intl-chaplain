@@ -26,7 +26,7 @@ window.smartsupp||(function(d) {
     <link rel="icon" href="assets/img/client-logos/logo.png" type="image/png" sizes="16x16">
 
     <!--title-->
-    <title>Chaplain International Corps</title>
+    <title>Chaplain Ministries Intl Corporate</title>
 
     <!--build:css-->
     <link rel="stylesheet" href="assets/css/main.css">
