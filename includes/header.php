@@ -39,14 +39,14 @@
         content="chaplain training USA, become a chaplain, chaplain ordination, spiritual care chaplain, crisis response chaplain, community outreach chaplain">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Chaplain Ministries International Corp">
-    <link rel="canonical" href="https://https://intlchaplains.com/">
+    <link rel="canonical" href="https://intlchaplains.com/">
 
     <!-- Open Graph Tags for Social Sharing -->
     <meta property="og:title" content="Chaplain Ministries International Corp | Become a Chaplain in the USA">
     <meta property="og:description"
         content="Equipping and ordaining chaplains who provide spiritual care, crisis support, and community outreach across the United States.">
-    <meta property="og:image" content="https://https://intlchaplains.com/assets/img/img4.jpeg">
-    <meta property="og:url" content="https://https://intlchaplains.com/">
+    <meta property="og:image" content="https://intlchaplains.com/assets/img/img4.jpeg">
+    <meta property="og:url" content="https://intlchaplains.com/">
     <meta property="og:type" content="website">
 </head>
 
